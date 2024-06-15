@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using InforIntegVer2.Forms;
+using System;
+
 using System.Windows.Forms;
 
 namespace InforIntegVer2
@@ -13,11 +8,16 @@ namespace InforIntegVer2
     public partial class Form2 : Form
     {
         private Form activeForm;
+        private Form main;
         public Form2()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             setForm(new HomeForm());
+            main = this as Form;
         }
+
+        public Form GetForm() { return main; }
 
         public void setForm(Form form)
         {
@@ -44,12 +44,12 @@ namespace InforIntegVer2
 
         private void btnOrders_Click(object sender, EventArgs e)
         {
-
+            setForm(new OrdersForm());
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-
+            setForm(new ProfileForm());
         }
     }
 }

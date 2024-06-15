@@ -17,8 +17,9 @@ namespace InforIntegVer2
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            setData();
             initValues();
+            setData();
+            
 
 
             
@@ -33,11 +34,9 @@ namespace InforIntegVer2
 
 
         private void setData()
+
         {
             List<TestUC> items = dBHelper.getProductList();
-
-          
-
            
             foreach (TestUC item in items)
             {

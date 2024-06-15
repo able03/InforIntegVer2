@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblName = new System.Windows.Forms.Label();
+            this.lblQty = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnImg = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -39,6 +41,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblQty);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblPrice);
             this.panel1.Controls.Add(this.lblName);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -47,15 +51,23 @@
             this.panel1.Size = new System.Drawing.Size(165, 54);
             this.panel1.TabIndex = 1;
             // 
-            // lblName
+            // lblQty
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(4, 4);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(68, 20);
-            this.lblName.TabIndex = 0;
-            this.lblName.Text = "Hotdog";
+            this.lblQty.AutoSize = true;
+            this.lblQty.Location = new System.Drawing.Point(143, 30);
+            this.lblQty.Name = "lblQty";
+            this.lblQty.Size = new System.Drawing.Size(19, 13);
+            this.lblQty.TabIndex = 3;
+            this.lblQty.Text = "12";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(121, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Qty:";
             // 
             // lblPrice
             // 
@@ -66,6 +78,16 @@
             this.lblPrice.Size = new System.Drawing.Size(40, 13);
             this.lblPrice.TabIndex = 1;
             this.lblPrice.Text = "100.00";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(4, 4);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(68, 20);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Hotdog";
             // 
             // panel2
             // 
@@ -109,5 +131,7 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnImg;
+        private System.Windows.Forms.Label lblQty;
+        private System.Windows.Forms.Label label1;
     }
 }

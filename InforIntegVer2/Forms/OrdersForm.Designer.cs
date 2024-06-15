@@ -1,6 +1,6 @@
-﻿namespace InforIntegVer2
+﻿namespace InforIntegVer2.Forms
 {
-    partial class HomeForm
+    partial class OrdersForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.homeItemsPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.orderPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,24 +46,7 @@
             this.panel1.Location = new System.Drawing.Point(609, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(191, 450);
-            this.panel1.TabIndex = 0;
-            // 
-            // homeItemsPanel
-            // 
-            this.homeItemsPanel.AutoScroll = true;
-            this.homeItemsPanel.BackColor = System.Drawing.Color.White;
-            this.homeItemsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.homeItemsPanel.Location = new System.Drawing.Point(0, 0);
-            this.homeItemsPanel.Name = "homeItemsPanel";
-            this.homeItemsPanel.Size = new System.Drawing.Size(609, 450);
-            this.homeItemsPanel.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(24, 65);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.panel1.TabIndex = 1;
             // 
             // label1
             // 
@@ -76,6 +59,13 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Search";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(24, 65);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 0;
+            // 
             // button1
             // 
             this.button1.BackgroundImage = global::InforIntegVer2.Properties.Resources.search_interface_symbol;
@@ -86,17 +76,25 @@
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // HomeForm
+            // orderPanel
+            // 
+            this.orderPanel.AutoScroll = true;
+            this.orderPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.orderPanel.Location = new System.Drawing.Point(0, 0);
+            this.orderPanel.Name = "orderPanel";
+            this.orderPanel.Size = new System.Drawing.Size(609, 450);
+            this.orderPanel.TabIndex = 2;
+            // 
+            // OrdersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.homeItemsPanel);
+            this.Controls.Add(this.orderPanel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "HomeForm";
-            this.Text = "HomeForm";
+            this.Name = "OrdersForm";
+            this.Text = "OrdersForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -106,9 +104,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.FlowLayoutPanel homeItemsPanel;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.FlowLayoutPanel orderPanel;
     }
 }
